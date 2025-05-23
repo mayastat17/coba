@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BISA LAPOR</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+      background-color: #f2f2f2;
+    }
+
+    .header {
+      background-color: #202124;
+      color: white;
+      padding: 16px 20px;
+      text-align: left;
+      font-size: 18px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+    }
+
+    .header img {
+      width: 30px;
+      height: 30px;
+      margin-right: 12px;
+      filter: brightness(0) invert(1);
+    }
+
+    #beranda {
+      background: url('https://i.imgur.com/nc9GkRf.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 60px 20px;
+      color: #fff;
+      text-align: center;
+      position: relative;
+    }
+
+    #beranda::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.6);
+      z-index: 0;
+    }
+
+    #beranda > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    #beranda h1 {
+      font-size: 1.2em;
+      color: #000;
+    }
+
+    #beranda p {
+      font-size: 1.1em;
+      color: #333;
+    }
+
+    .geo-link {
+      background: none;
+      border: none;
+      padding: 0;
+      margin: 0;
+      font-weight: bold;
+      color: #000;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .geo-link:hover {
+      text-decoration: underline;
+      color: #007BFF;
+    }
+
+    #linktree {
+      background-color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    #linktree h2 {
+      color: #333;
+    }
+
+    .button-linktree {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 15px auto;
+      max-width: 250px;
+    }
+
+    .button-linktree img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 10px;
+    }
+
+    .button-linktree a {
+      padding: 12px 20px;
+      background-color: #007BFF;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    .button-linktree a:hover {
+      background-color: #0056b3;
+    }
+
+    #pengaduan {
+      padding: 40px 20px;
+      background-color: #f2f2f2;
+      text-align: center;
+    }
+
+    #pengaduan h2 {
+      color: #333;
+    }
+
+    iframe {
+      width: 100%;
+      height: 800px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <img src="https://i.imgur.com/qPoa0bp.jpg" alt="Logo">
+    BISA LAPOR!
+  </div>
+
+  <!-- HALAMAN SELAMAT DATANG -->
+  <section id="beranda">
+    <h1>Selamat Datang di Aplikasi Pengaduan BPS Kabupaten Bangka Selatan</h1>
+    <img src="https://i.imgur.com/ZVsAGa4.jpg" 
+         alt="Logo Bulat" 
+         style="width: 100px; height: 100px; border-radius: 50%; margin-bottom: 20px;">
+
+    <p style="margin-top: -5px;">
+      <a href="https://maps.app.goo.gl/oaHqfSKxP351BRjx5" target="_blank" class="geo-link">
+        📍 Kantor Kami
+      </a>
+    </p>
+  </section>
+
+  <!-- LINKTREE -->
+  <section id="linktree">
+    <h2>SALURAN PENGADUAN</h2>
+
+    <div class="button-linktree">
+      <img src="https://i.imgur.com/grHSRWx.jpg" alt="Form">
+      <a href="http://lapor.go.id">Web Lapor</a>
+    </div>
+
+    <div class="button-linktree">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+      <a href="https://wa.me/6285179985719" target="_blank">WhatsApp</a>
+    </div>
+
+    <div class="button-linktree">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Email">
+      <a href="mailto:bps1905@bps.go.id">Email</a>
+    </div>
+
+    <div class="button-linktree">
+      <img src="https://i.imgur.com/T347Apn.jpg" style="width:100%; max-width:50px; border-radius:50px;">
+      <a href="https://drive.google.com/file/d/1J3_nC9FRVsRP_NCLh2fApddZlD-U2rRk/view?usp=sharing" target="_blank">Tatap Muka</a>
+    </div>
+
+    <div class="button-linktree">
+      <img src="https://i.imgur.com/UhimXE3.jpg" style="width:100%; max-width:100px; border-radius:10px;">
+      <a href="https://drive.google.com/file/d/1KCxb7gHzLgXhM-6EmF0rVhVmULyz9Vrp/view" target="_blank">Kotak Pengaduan</a>
+    </div>
+  </section>
+
+</body>
+</html>
